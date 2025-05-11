@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #162950;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    width: 24px;
+    height: 24px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-links .dropdown {
+    position: relative;
+}
+
+.nav-links .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #223a64;
+    padding: 0.5rem 0;
+    border-radius: 4px;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #365b99;
+}
+
+.get-started {
+    background: linear-gradient(to right, #2a3e6a, #324a81);
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    border: 1px solid #ffffff80;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: #1b3057;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu.show {
+        display: flex;
+    }
+}
+
+/* navbar end */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1rem;
+        background-color: #162950;
+
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 strong {
+    color: #ffffff;
+}
+
+.hero-content p {
+    color: #b0bfd6;
+    line-height: 1.6;
+}
+
+.hero-btn {
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    background: linear-gradient(to right, #83d70d, #3eaf41);
+    border: none;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: linear-gradient(to right, #75c60d, #359e38);
+}
+
+.hero-image {
+    max-width: 600px;
+    width: 100%;
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background-color: #13213f;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #b0ffd0;
+    font-size: 0.95rem;
+}
+
+.benefit-item img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 5rem 4rem;
+    }
+
+    .hero-content {
+        flex: 1;
+        margin-right: 2rem;
+        max-width: 50%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        flex: 1;
+        max-width: 50%;
+    }
+
+    .benefits {
+        justify-content: space-around;
+    }
+}
+
+
+/* hero section end */
+
+.container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: #0c1f4a;
+      color: #fff;
+      padding: 2rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+
+    .card img {
+      width: 40px;
+      margin-bottom: 1.2rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .title {
+        font-size: 1.75rem;
+        text-align: center;
+      }
+
+      .card {
+        align-items: center;
+        text-align: center;
+      }
+    }
