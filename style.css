@@ -456,7 +456,7 @@ nav {
 }
 
 .logo-box {
- background-color: #22395d;
+  background-color: #22395d;
   padding: 1rem 2rem;
   border-radius: 10px;
   min-width: 130px;
@@ -505,6 +505,215 @@ nav {
 
 /* logo-wrapper end */
 
+ .cta-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      overflow: hidden;
+      background-color: #0B1F45;
+      position: relative;
+    }
 
+    .cta-left {
+      background-color: #0B1F45;
+      color: white;
+      padding: 60px 40px;
+      border-top-right-radius: 100px;
+      flex: 1 1 300px;
+      z-index: 2;
+    }
 
+    .cta-left h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
 
+    .cta-button {
+      background-color: #7ec142;
+      color: #0B1F45;
+      padding: 14px 26px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 40px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .cta-button span {
+      background-color: #0B1F45;
+      color: white;
+      border-radius: 50%;
+      padding: 8px 10px;
+      margin-left: 10px;
+    }
+
+    .cta-right {
+      flex: 1 1 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0B1F45;
+      position: relative;
+      padding: 40px;
+    }
+
+    .cta-right img {
+      max-width: 100%;
+      height: auto;
+      z-index: 1;
+    }
+
+    /* Make right background pattern like image using SVG or illustration */
+    .cta-right::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -60px;
+      width: 150%;
+      height: 100%;
+      background: linear-gradient(to bottom right, #0B1F45 60%, transparent 40%);
+      z-index: 0;
+      border-top-left-radius: 100px;
+    }
+
+    @media (max-width: 768px) {
+      .cta-section {
+        flex-direction: column;
+      }
+
+      .cta-left, .cta-right {
+        border-radius: 0;
+        padding: 30px 20px;
+      }
+
+      .cta-right::before {
+        display: none;
+      }
+    }
+
+/* cta section end */
+
+footer {
+  background-color: #0B1F45;
+  color: white;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-logo img {
+  width: 40px;
+}
+
+.footer-description {
+  font-size: 14px;
+  color: #d4d4d4;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  color: #0B1F45;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.contact-info div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.footer-title {
+  color: #7ec142;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.cta-button {
+  border: 1px solid white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  width: 180px;
+}
+
+.cta-button span {
+  background-color: #384a62;
+  border-radius: 50%;
+  padding: 6px 10px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 40px;
+  color: #ccc;
+}
+
+/* Responsive */
+@media(min-width: 768px) {
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-column {
+    max-width: 250px;
+  }
+}
