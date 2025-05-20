@@ -1,10 +1,9 @@
 const hamburger  = document.getElementById("hamburger");
-const mobileMenu = document.getElementById("mobileMenu");
+const mobileMenu = document.getElementById("mobile-menu"); // <- id corrected
 
-hamburger.addEventListener('click', () =>{
+hamburger.addEventListener('click', () => {
     mobileMenu.classList.toggle('show');
 });
-
 // navbar end
 
 document.addEventListener("DOMContentLoaded", () => {
