@@ -1,8 +1,8 @@
-const hamburger  = document.getElementById("hamburger");
+const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobile-menu"); // <- id corrected
 
 hamburger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('show');
+  mobileMenu.classList.toggle('show');
 });
 // navbar end
 
@@ -25,6 +25,23 @@ document.addEventListener("DOMContentLoaded", () => {
   }, appearOptions);
 
   faders.forEach(fader => appearOnScroll.observe(fader));
+});
+
+
+
+
+// work page code start
+
+
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  question.addEventListener('click', () => {
+    item.classList.toggle('active');
+    const icon = question.querySelector('.icon');
+    icon.innerHTML = item.classList.contains('active') ? '▲' : '▼';
+  });
 });
 
 
