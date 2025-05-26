@@ -253,6 +253,7 @@
  .container {
    max-width: 1200px;
    margin: 0 auto;
+
    padding: 2rem 1rem;
    margin-bottom: 50px;
  }
@@ -1478,4 +1479,114 @@
   .faq-question {
     font-size: 0.95rem;
   }
+}
+
+
+/* contact form start */
+
+.contact-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+input,
+textarea {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ff5722;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+   background-color: #162950;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .contact-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* thank file start */
+
+.thankyou-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+.back-home {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: white;
+  color: #ff5722;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-home:hover {
+  background-color: #f5f5f5;
+  color: #e64a19;
 }
