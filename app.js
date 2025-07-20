@@ -6,6 +6,12 @@ hamburger.addEventListener('click', () => {
 });
 // navbar end
 
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const faders = document.querySelectorAll(".fade-in");
 

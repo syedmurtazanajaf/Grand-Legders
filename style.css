@@ -148,6 +148,29 @@
 
  /* navbar end */
 
+.typed-cursor {
+  font-weight: 100;
+  font-size: 2rem;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+#hero-btn {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+#hero-btn.show {
+  opacity: 1;
+}
+
+
  .hero {
    padding: 4rem 1rem;
    color: #162950;
@@ -869,10 +892,11 @@
 
  /* container1 end */
 
- .icon {
+ .commit-icon {
    font-size: 40px;
    color: #0ea5e9;
    margin-bottom: 20px;
+  
  }
 
 
@@ -1107,6 +1131,7 @@
    padding: 60px 20px;
    display: flex;
    justify-content: center;
+   margin-bottom: 70px;
  }
 
  .how-it-works-container {
@@ -1176,7 +1201,7 @@
    max-width: 1400px;
    margin: 0 auto;
    padding: 0 1rem;
-   margin-top: 50px;
+   
  }
 
  .main-heading {
@@ -1207,6 +1232,7 @@
    gap: 1.5rem;
    margin-top: 2rem;
    padding: 0 1rem;
+   margin-bottom: 70px;
  }
 
  .card {
@@ -1912,5 +1938,172 @@
  /* Pricing Page Start */
 
 
+.main-section{
+  margin-bottom: 150px;
+}
+  
+        /* Services section */
+        .services {
+            padding: 5rem 0;
+            background: #f8f9fa;
+          
+        }
 
- 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Pricing table */
+        .pricing {
+            padding: 5rem 0;
+            /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+               background-color: #162950;
+
+            color: white;
+        }
+
+        .pricing-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-card p {
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .provider-table {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-top: 3rem;
+            overflow-x: auto;
+        }
+
+        .provider-table table {
+            width: 100%;
+            border-collapse: collapse;
+            color: white;
+        }
+
+        .provider-table th,
+        .provider-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .provider-table th {
+            background: rgba(255, 255, 255, 0.1);
+            font-weight: bold;
+        }
+
+        .provider-table tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+      
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
