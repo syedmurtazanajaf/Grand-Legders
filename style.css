@@ -36,19 +36,18 @@
    justify-content: space-between;
    align-items: center;
    padding: 1rem 2rem;
-   background: white;
+   background: white
  }
 
  .logo {
    display: flex;
    align-items: center;
    gap: 0.5rem;
-   color: linear-gradient(66.07deg, #3DB9CB 0%, #175F98 100%);
  }
 
  .logo img {
-   width: 24px;
-   height: 24px;
+   width: 200px;
+   height:40px;
  }
 
  .nav-links {
@@ -59,10 +58,10 @@
 
  .nav-links a {
    text-decoration: none;
-
-   color: linear-gradient(66.07deg, #3DB9CB 0%, #175F98 100%);
+  color: black;
    font-weight: 500;
  }
+
 
  .nav-links .dropdown {
    position: relative;
@@ -333,7 +332,7 @@
    font-size: 2.5rem;
    margin-bottom: 40px;
    position: relative;
-   color:  #175F98;
+   color: #0ea5e9;
  }
 
  .services-grid {
@@ -363,7 +362,7 @@
    width: 40px;
    height: 40px;
    margin-bottom: 20px;
-   background: #FF4B33;
+   background: linear-gradient(66.07deg, #3DB9CB 0%, #175F98 100%);
    border-radius: 50%;
    display: flex;
    align-items: center;
@@ -413,7 +412,7 @@
  .step-number {
    min-width: 40px;
    min-height: 40px;
-   background-color: #FF4B33;
+      background: linear-gradient(66.07deg, #3DB9CB 0%, #175F98 100%);
    color: white;
    font-weight: bold;
    font-size: 1.2rem;
@@ -428,7 +427,8 @@
  .step-content h3 {
    font-size: 1.2rem;
    margin-bottom: 8px;
-   color: #FF4B33;
+   color: #0ea5e9;
+  
  }
 
  .step-content p {
@@ -468,7 +468,7 @@
 
  .testimonial-header h2 {
    font-size: 2rem;
-   color: #FF4B33;
+   color: #0ea5e9;
  }
 
  .testimonial-header p {
@@ -565,7 +565,7 @@
 
 
  footer {
-   background: #FF4B33;
+   background: linear-gradient(66.07deg, #3DB9CB 0%, #175F98 100%);
    color: white;
    padding: 50px 20px 20px;
  }
