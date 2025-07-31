@@ -23,7 +23,7 @@
       <a href="./work.html">How It Works</a>
       <a href="./price.html">Pricing</a>
       <span class="get-started">
-      <a href="./contact.html"  style="color: white; " >Get Started →</a>
+        <a href="./contact.html" style="color: white; ">Get Started →</a>
       </span>
     </div>
 
@@ -34,43 +34,29 @@
     </div>
   </nav>
 
-  <div class="mobile-menu" id="mobile-menu">
-    <a href="./index.html">Home</a>
-    <a href="./sevices.html">Services</a>
-    <a href="./about.html">About</a>
-    <a href="./work.html">How It Works</a>
-    <a href="./price.html">Pricing</a>
-    <a href="./contact.html" class="get-started">Get Started →</a>
-  </div>
+
 
 
   <!-- navbar end -->
 
+<section class="hero">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="./image/video/148596-794221551.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <h1><strong> "Online Accounting Department for<br>Small and Medium Sized Businesses"</strong></h1>
+        <p>"In today’s rapidly evolving business environment, adaptability and efficiency are essential.
+          At Grand Ledgers, we revolutionize bookkeeping with our state-of-the-art Virtual Bookkeeping Services. Step into the future of financial management and discover the benefits below:"</p>
+        <span class="get-started">
+          <a href="./contact.html" style="color: white; ">Get Started →</a>
+        </span>
+    </div>
+  </div>
+</section>
 
-  <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-content">
-        <!-- <h1><strong>Online Accounting</strong> Department for<br>Small and Medium Sized Businesses</h1> -->
-         <h1><strong><span id="typed-heading"></span></strong></h1>
-         <p><span id="typed-paragraph"></span></p>
-
-
-        <!-- <p >
-          In today’s rapidly evolving business environment, adaptability and efficiency are
-          essential. At Grand Ledgers, we revolutionize bookkeeping with our state-of-the-art
-          Virtual Bookkeeping Services. Step into the future of financial management and
-          discover the benefits below:
-        </p> -->
-        <!-- <a href="./contact.html"><button class="hero-btn">Get Started →</button></a> -->
-        <a href="./contact.html"><button id="hero-btn" class="hero-btn" style="display: none;">Get Started →</button></a>
-
-      </div>
-
-      <div class="hero-image">
-        <img src="./image/Adobe Express - file.png" alt="Accounting Dashboard">
-      </div>
-      </div>
-  </section>
 
 
   <!-- hero section end -->
@@ -221,8 +207,8 @@
         <!-- Logo & Contact -->
         <div class="footer-column">
           <div class="footer-logo">
-            <img src="#" alt="Logo">
-            <h2 style="color: white;">grandledgers</h2>
+            <img src="./image/logo2-removebg-preview.png" alt="Logo">
+            <h2 style="color: white;"></h2>
           </div>
           <div class="footer-description">
             Online Accounting Department for<br>Small and Medium Sized Businesses
@@ -260,17 +246,18 @@
         <div class="footer-column">
           <div class="footer-title">Information</div>
           <div class="footer-links">
-            <a href="#">About</a>
-            <a href="#">How It Works</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact Us</a>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./work.html">How It Works</a>
+            <a href="./price.html">Pricing</a>
+            <a href="./contact.html">Contact Us</a>
           </div>
         </div>
 
         <!-- CTA -->
         <div class="footer-column">
           <div class="footer-title">Go To...</div>
-          <a href="#" class="cta-button">
+          <a href="./contact.html" class="cta-button">
             Get Started
             <span>&rarr;</span>
           </a>
@@ -279,46 +266,10 @@
 
       <div class="footer-bottom">
         Your Trusted Online Accounting Partner<br>
-        ©AccuLedgers 2025
+        ©GrandLedgers 2025
       </div>
     </div>
   </footer>
-
-<!-- typing animation -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    new Typed("#typed-heading", {
-      strings: [
-        "Online Accounting Department for<br>Small and Medium Sized Businesses"
-      ],
-      typeSpeed: 10,
-      showCursor: true,
-      cursorChar: '|',
-      contentType: 'html',
-      onComplete: function () {
-        new Typed("#typed-paragraph", {
-          strings: [
-            "In today’s rapidly evolving business environment, adaptability and efficiency are essential. " +
-            "At Grand Ledgers, we revolutionize bookkeeping with our state-of-the-art Virtual Bookkeeping Services. " +
-            "Step into the future of financial management and discover the benefits below:"
-          ],
-          typeSpeed: 8,
-          showCursor: false,
-          onComplete: function () {
-            const btn = document.getElementById("hero-btn");
-            btn.style.display = "inline-flex";
-            setTimeout(() => {
-              btn.classList.add("show");
-            }, 50); // Small delay for transition
-          }
-        });
-      }
-    });
-  });
-</script>
-
 
 
 
