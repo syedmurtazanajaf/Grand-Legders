@@ -51,11 +51,10 @@
 
   <!-- navbar end -->
 
-  <div class="contact-container">
+  <!-- <div class="contact-container">
     <h2>Contact Us</h2>
     <form action="https://formsubmit.co/syedmurtaza545@gmail.com" method="POST">
 
-      <!-- Redirect after submit -->
       <input type="hidden" name="_next" value="https://grand-legders.vercel.app/thank.html">
       <input type="hidden" name="_captcha" value="false">
 
@@ -70,8 +69,89 @@
 
       <button type="submit">Send Message</button>
     </form>
-  </div>
+  </div> -->
 
+
+
+
+   <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form action="https://formsubmit.co/syedmurtaza545@gmail.com" method="POST">
+            <!-- Redirect after submit -->
+            <input type="hidden" name="_next" value="https://grand-legders.vercel.app/thank.html">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name:" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address:" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number:">
+                </div>
+                <div class="form-group">
+                    <label for="company">Company Name:</label>
+                    <input type="text" id="company" name="company" placeholder="Company Name:">
+                </div>
+            </div>
+
+            <div class="services-section">
+                <div class="services-label">Service Needs:</div>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="bookkeeping" name="services" value="Monthly Bookkeeping">
+                        <label for="bookkeeping">Monthly Bookkeeping</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="yearEnd" name="services" value="Year-End Financials">
+                        <label for="yearEnd">Year-End Financials</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="payroll" name="services" value="Payroll Services">
+                        <label for="payroll">Payroll Services</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="custom" name="services" value="Custom Inquiry">
+                        <label for="custom">Custom Inquiry</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="companySize">Company Size:</label>
+                <select id="companySize" name="companySize">
+                    <option value="">Company Size:</option>
+                    <option value="1-10">1-10 employees</option>
+                    <option value="11-50">11-50 employees</option>
+                    <option value="51-200">51-200 employees</option>
+                    <option value="201-500">201-500 employees</option>
+                    <option value="500+">500+ employees</option>
+                </select>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Message:" required></textarea>
+            </div>
+
+            <div class="recaptcha-container">
+                <!-- reCAPTCHA placeholder - you would need to implement actual reCAPTCHA -->
+                <div style="background: #f9f9f9; border: 1px solid #ddd; padding: 10px; border-radius: 4px; font-size: 12px; color: #666;">
+                    I'm not a robot ✓
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
 
   <footer>
     <div class="footer-container">
