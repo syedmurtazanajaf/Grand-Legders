@@ -139,7 +139,7 @@
  .hamburger span {
    height: 3px;
    width: 25px;
-   background: white;
+   background: #0ea5e9;
  }
 
  .mobile-menu {
@@ -787,98 +787,141 @@
 
 
  .container1 {
-   max-width: 1200px;
-   margin: auto;
- }
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
 
- .title {
-   font-size: 2rem;
-   font-weight: 700;
-   color: #0ea5e9;
-   margin-bottom: 40px;
- }
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0ea5e9;
+  margin-bottom: 40px;
+  text-align: center;
+}
 
- .timeline {
-   position: relative;
-   margin-left: 30px;
-   border-left: 3px solid #d0d6f9;
-   padding-left: 60px;
- }
+.timeline {
+  position: relative;
+  border-left: 3px solid #d0d6f9;
+  padding-left: 60px;
+}
 
- .timeline-item {
-   position: relative;
-   margin-bottom: 60px;
- }
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+  padding-left: 10px;
+}
 
- .timeline-item::before {
-   content: "";
-   position: absolute;
-   left: -45px;
-   top: 0;
-   width: 40px;
-   height: 40px;
-   background-color: #e0ebff;
-   border-radius: 50%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: 60%;
- }
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -45px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #e0ebff;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
 
- .timeline-item:nth-child(1)::before {
-   background-image: url('https://img.icons8.com/ios-filled/50/000000/communication.png');
- }
+/* Icons for each item */
+.timeline-item:nth-child(1)::before {
+  background-image: url('https://img.icons8.com/ios-filled/50/000000/communication.png');
+}
+.timeline-item:nth-child(2)::before {
+  background-image: url('https://img.icons8.com/ios-filled/50/000000/idea.png');
+}
+.timeline-item:nth-child(3)::before {
+  background-image: url('https://img.icons8.com/ios-filled/50/000000/combo-chart--v1.png');
+}
+.timeline-item:nth-child(4)::before {
+  background-image: url('https://img.icons8.com/ios-filled/50/000000/robot-2.png');
+}
 
- .timeline-item:nth-child(2)::before {
-   background-image: url('https://img.icons8.com/ios-filled/50/000000/idea.png');
- }
+.timeline-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #0ea5e9;
+}
 
- .timeline-item:nth-child(3)::before {
-   background-image: url('https://img.icons8.com/ios-filled/50/000000/combo-chart--v1.png');
- }
+.timeline-item p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+}
 
- .timeline-item:nth-child(4)::before {
-   background-image: url('https://img.icons8.com/ios-filled/50/000000/robot-2.png');
- }
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .container1 {
+    padding: 15px;
+  }
 
- .timeline-item:nth-child(5)::before {
-   background-image: url('https://img.icons8.com/ios-filled/50/000000/conference-call.png');
- }
+  .timeline {
+    padding-left: 40px;
+  }
 
- .timeline-item h3 {
-   font-size: 1.2rem;
-   font-weight: 600;
-   margin-bottom: 5px;
-   color: #0ea5e9;
- }
+  .timeline-item::before {
+    left: -30px;
+    width: 36px;
+    height: 36px;
+    background-size: 55%;
+  }
+}
 
- .timeline-item p {
-   font-size: 0.95rem;
-   color: #333;
-   line-height: 1.5;
- }
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.6rem;
+  }
 
- @media (max-width: 768px) {
-   .timeline {
-     padding-left: 20px;
-     margin-left: 10px;
-   }
+  .timeline {
+    padding-left: 25px;
+    border-left: 2px solid #d0d6f9;
+  }
 
-   .timeline-item::before {
-     left: -20px;
-     width: 36px;
-     height: 36px;
-     background-size: 50%;
-   }
+  .timeline-item::before {
+    left: -25px;
+    width: 30px;
+    height: 30px;
+    background-size: 50%;
+  }
 
-   .title {
-     font-size: 1.5rem;
-     margin-bottom: 30px;
-   }
- }
+  .timeline-item h3 {
+    font-size: 1rem;
+  }
 
+  .timeline-item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .timeline {
+    padding-left: 25px;
+    border-left: 2px solid #d0d6f9;
+  }
+
+  .timeline-item::before {
+    left: -20px;
+    width: 26px;
+    height: 26px;
+    background-size: 50%;
+  }
+
+  .timeline-item h3 {
+    font-size: 0.95rem;
+  }
+
+  .timeline-item p {
+    font-size: 0.85rem;
+  }
+}
 
  /* container1 end */
 
