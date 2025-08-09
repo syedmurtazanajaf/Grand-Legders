@@ -8,10 +8,6 @@ hamburger.addEventListener('click', () => {
 
 
 
-
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const faders = document.querySelectorAll(".fade-in");
 
@@ -51,7 +47,33 @@ faqItems.forEach(item => {
 });
 
 
-// contact form start
+// Review Slider code
+
+let slides = document.querySelectorAll(".slide");
+let dots = document.querySelectorAll(".dot");
+let index = 0;
+
+function showSlide(n) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === n);
+    dots[i].classList.toggle("active", i === n);
+  });
+}
+
+function nextSlide() {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}
+
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    index = i;
+    showSlide(index);
+  });
+});
+
+// Auto slide every 4 seconds
+setInterval(nextSlide, 3000);
 
 
 
