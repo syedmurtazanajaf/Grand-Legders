@@ -72,7 +72,7 @@ dots.forEach((dot, i) => {
   });
 });
 
-// Auto slide every 4 seconds
+// Auto slide every 3 seconds
 setInterval(nextSlide, 3000);
 
 
