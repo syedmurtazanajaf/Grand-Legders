@@ -238,12 +238,14 @@
 
  /* Responsive adjustments */
  @media (min-width: 768px) {
+
    .hero-inner {
      flex-direction: column;
      justify-content: center;
      align-items: center;
      text-align: center;
    }
+  
 
    .hero-content {
      text-align: center;
@@ -251,6 +253,7 @@
      margin: 0;
    }
  }
+
 
  /* hero section end */
 
@@ -1912,7 +1915,6 @@
  .bookkeeping-section {
    padding: 60px 20px;
    background: white;
-   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
  }
 
@@ -2095,11 +2097,4 @@
    font-size: 0.96rem;
    line-height: 1.6;
    color: #475569;
- }
-
- /* Coming Soon Styling */
- .coming-soon {
-   color: #0ea5e9;
-   font-weight: 600;
-   margin-top: 15px;
  }

@@ -14,7 +14,7 @@
 <body>
   <nav>
     <div class="logo">
-      <a href="./index.html"> <img src="./image/logo2-removebg-preview.png" alt=""></a>
+      <a href="./index.html"> <img src="./image/logo.png" alt=""></a>
     </div>
 
     <div class="nav-links" id="nav-links">
@@ -106,7 +106,7 @@
       <h1>Our Commitment</h1>
     </div>
 
-    <div class="commitment-cards  fade-in">
+    <div class="commitment-cards">
 
       <div class="commitment-card ">
         <div class="commit-icon"><i class="fas fa-users"></i></div>
@@ -159,7 +159,7 @@
         <!-- Logo & Contact -->
         <div class="footer-column">
           <div class="footer-logo">
-            <img src="./image/logo2-removebg-preview.png" alt="Logo">
+            <img src="./image/logo.png" alt="Logo">
             <h2 style="color: white;"></h2>
           </div>
           <div class="footer-description">
@@ -221,6 +221,32 @@
       </div>
     </div>
   </footer>
+
+
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const fadeElements = document.querySelectorAll(".fade-in");
+
+    function checkFadeIn() {
+      const triggerBottom = window.innerHeight * 0.85; // 85% viewport
+
+      fadeElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < triggerBottom) {
+          el.classList.add("show");
+        } else {
+          el.classList.remove("show");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", checkFadeIn);
+    checkFadeIn(); // page load par bhi check ho
+  });
+</script>
+
 
 </body>
 <script src="app.js"></script>
