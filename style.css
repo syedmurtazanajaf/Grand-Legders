@@ -206,19 +206,22 @@
    align-items: center;
    justify-content: center;
    min-height: 100vh;
+   width: 100%;
    /* Make hero full screen height */
  }
 
  .hero-inner {
    text-align: center;
    z-index: 1;
-   max-width: 800px;
+   max-width: 100%;
+   width: 100%;
  }
 
  .hero-content {
    display: flex;
    flex-direction: column;
    align-items: center;
+   width: 100%;
  }
 
  .hero-content h1 {
@@ -230,15 +233,12 @@
  .hero-content p {
    line-height: 1.6;
    margin-bottom: 1.5rem;
-   max-width: 600px;
+   max-width: 100%;
  }
 
 
- /* ... baki existing styling jaisa aapne already diya hai ... */
-
  /* Responsive adjustments */
  @media (min-width: 768px) {
-
    .hero-inner {
      flex-direction: column;
      justify-content: center;
@@ -252,6 +252,27 @@
      max-width: 100%;
      margin: 0;
    }
+ }
+
+ @media (max-width: 767px) {
+  .hero{
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+
+
+  .hero-content h1{
+    font-size: 1.6rem;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+
+  .hero-content p{
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 0.5rem;
+  }
+  
  }
 
 
@@ -290,6 +311,8 @@
    align-items: center;
    min-height: 160px;
    transition: transform 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+
 
  }
 
