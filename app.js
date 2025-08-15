@@ -84,7 +84,6 @@ setInterval(nextSlide, 3000);
 
 
 // Animation for footer
-
 document.addEventListener("DOMContentLoaded", function () {
   const columns = document.querySelectorAll(".footer-column");
 

@@ -540,13 +540,13 @@
 footer {
   background: linear-gradient(66.07deg, #3DB9CB 0%, #175F98 100%);
   color: white;
-  padding: 40px 15px 15px;
+  padding: 25px 12px 12px; /* Mobile pe kam padding */
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   max-width: 1200px;
   margin: auto;
 }
@@ -554,7 +554,7 @@ footer {
 .footer-top {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
 }
 
 .footer-column {
@@ -574,30 +574,29 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .footer-logo img {
-  width: 150px;
+  width: 120px; /* Mobile pe chhota logo */
   background-color: white;
-  padding: 5px;
+  padding: 4px;
 }
 
 .footer-description {
-  font-size: 14px;
-  color: white;
-  margin-bottom: 15px;
+  font-size: 13px;
+  margin-bottom: 10px;
 }
 
 .social-icons {
   display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
+  gap: 8px;
+  margin-bottom: 10px;
 }
 
 .social-icons a {
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   background-color: white;
   color: #0B1F45;
   border-radius: 50%;
@@ -605,9 +604,8 @@ footer {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   transition: all 0.3s ease;
-  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
 }
 
 .social-icons a:hover {
@@ -622,30 +620,30 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 6px 0;
-  font-size: 13px;
+  margin: 4px 0;
+  font-size: 12px;
 }
 
 .footer-title {
   color: #81f31d;
   font-weight: bold;
-  margin-bottom: 15px;
-  font-size: 15px;
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
 .footer-links a {
   display: block;
   text-decoration: none;
   color: white;
-  margin: 6px 0;
-  font-size: 13px;
+  margin: 4px 0;
+  font-size: 12px;
 }
 
 .cta-button {
   background: linear-gradient(66.07deg, #3DB9CB 0%, #175F98 100%);
   color: white;
-  width: 170px;
-  padding: 1rem 1.5rem;
+  width: 150px;
+  padding: 0.7rem 1rem;
   border-radius: 999px;
   border: 1px solid #ffffff40;
   font-weight: 700;
@@ -655,7 +653,6 @@ footer {
   gap: 0.5rem;
   transition: all 0.3s ease;
   text-decoration: none;
-  position: relative;
 }
 
 .cta-button:hover {
@@ -667,9 +664,8 @@ footer {
 
 .footer-bottom {
   text-align: center;
-  font-size: 12px;
-  margin-top: 8px;
-  color: white;
+  font-size: 11px;
+  margin-top: 5px;
 }
 
 /* Tablet */
@@ -686,6 +682,9 @@ footer {
 
 /* Desktop */
 @media (min-width: 992px) {
+  footer {
+    padding: 40px 15px 15px;
+  }
   .footer-top {
     flex-direction: row;
     justify-content: space-between;
