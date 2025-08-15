@@ -83,3 +83,23 @@ setInterval(nextSlide, 3000);
 
 
 
+// Animation for footer
+
+document.addEventListener("DOMContentLoaded", function () {
+  const columns = document.querySelectorAll(".footer-column");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        columns.forEach((col, index) => {
+          setTimeout(() => {
+            col.classList.add("show");
+          }, index * 200); // delay between columns
+        });
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.2 });
+
+  observer.observe(document.querySelector(".footer-top"));
+});
