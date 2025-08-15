@@ -541,6 +541,7 @@ footer {
   background: linear-gradient(66.07deg, #3DB9CB 0%, #175F98 100%);
   color: white;
   padding: 25px 12px 12px; /* Mobile pe kam padding */
+  
 }
 
 .footer-container {
@@ -668,8 +669,16 @@ footer {
   margin-top: 5px;
 }
 
+@media (max-width: 768px) {
+  .footer-container{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /* Tablet */
 @media (min-width: 600px) {
+
   .footer-top {
     flex-direction: row;
     flex-wrap: wrap;
