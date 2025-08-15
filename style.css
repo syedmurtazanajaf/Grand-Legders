@@ -992,6 +992,12 @@ footer {
    line-height: 1.6;
  }
 
+ @media (max-width: 480px){
+  .commitment-header h1{
+    font-size: 1.9rem;
+  }
+ }
+
  /* Container end */
 
 
