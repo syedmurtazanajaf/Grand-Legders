@@ -90,6 +90,10 @@ nav {
   box-shadow: 0 2px 8px rgba(30, 118, 233, 0.3);
 }
 
+.btn-white {
+  color: white;
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -197,6 +201,8 @@ nav {
 
 /* Responsive adjustments */
 @media (min-width: 768px) {
+
+  
   .hero-inner {
     flex-direction: column;
     justify-content: center;
@@ -213,7 +219,14 @@ nav {
 }
 
 @media (max-width: 767px) {
+
+  .background-video {
+    display: none;
+  }
+ 
   .hero {
+        background: url("image/video/thumbnail.png") center/cover no-repeat;
+
     padding: 2rem 1rem;
     min-height: auto;
   }
@@ -1238,9 +1251,10 @@ footer {
 
 @media (max-width: 575px) {
 
-  .main-heading{
+  .main-heading {
     font-size: 1.9rem;
   }
+
   .cards-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -1333,10 +1347,10 @@ footer {
 }
 
 @media (max-width: 575px) {
-  .Bringing h2{
+  .Bringing h2 {
     font-size: 1.7rem;
   }
-  
+
 }
 
 /* Bringing container end  */

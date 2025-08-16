@@ -4,31 +4,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+  <title>GrandLedgers – Virtual Bookkeeping & Online Accounting Services</title>
+  <meta name="description"
+    content="GrandLedgers offers virtual bookkeeping, online accounting, and payroll services for small & medium businesses. Your trusted financial partner.">
+  <meta name="keywords"
+    content="Virtual Bookkeeping, Online Accounting, Payroll Services, Catchup Bookkeeping, GrandLedgers">
+  <meta name="author" content="GrandLedgers">
+
+  <!-- Open Graph (Facebook / LinkedIn) -->
+  <meta property="og:title" content="GrandLedgers – Virtual Bookkeeping & Online Accounting Services">
+  <meta property="og:description" content="Trusted online accounting & bookkeeping services for SMEs.">
+  <meta property="og:image" content="https://grand-ledgers.vercel.app/image/logo.png">
+  <meta property="og:url" content="https://grand-ledgers.vercel.app">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GrandLedgers – Online Accounting Partner">
+  <meta name="twitter:description" content="Professional bookkeeping & payroll services for growing businesses.">
+  <meta name="twitter:image" content="https://grand-ledgers.vercel.app/image/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="image/favicon.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts Optimized -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2Pkf5t3l8zT6Q9erjRzCQXDpUe1koRaSPo6e7/jT730GUNYyPq9M+M7iFw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <!-- JSON-LD Schema (SEO Boost 🚀) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "GrandLedgers",
+    "url": "https://grand-ledgers.vercel.app",
+    "logo": "https://grand-ledgers.vercel.app/image/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-312-788-8492",
+      "contactType": "Customer Service",
+      "email": "info@grandledgers.com"
+    },
+    "sameAs": [
+      "https://www.facebook.com/GrandLedgers",
+      "https://www.linkedin.com/company/GrandLedgers",
+      "https://www.instagram.com/GrandLedgers"
+    ]
+  }
+  </script>
 </head>
+
 
 <body>
 
   <nav>
     <div class="logo">
-      <a href="./index.html"> <img src="./image/logo.png" alt=""></a>
+      <a href="index.html"> <img src="image/logo.png" alt="GrandLedgers Company Logo" loading="lazy"></a>
     </div>
 
     <div class="nav-links" id="nav-links">
-      <a href="./index.html">Home</a>
-      <a href="./sevices.html">Services</a>
-      <a href="./about.html">About</a>
-      <a href="./work.html">How It Works</a>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="work.html">How It Works</a>
       <span class="get-started">
-        <a href="./contact.html" style="color: white; ">Start Now</a>
+        <a href="contact.html" class="btn-white">Start Now</a>
       </span>
     </div>
 
@@ -40,11 +96,11 @@
   </nav>
 
   <div class="mobile-menu" id="mobile-menu">
-    <a href="./index.html">Home</a>
-    <a href="./sevices.html">Services</a>
-    <a href="./about.html">About</a>
-    <a href="./work.html">How It Works</a>
-    <a href="./contact.html" class="get-started">Start Now</a>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="work.html">How It Works</a>
+    <a href="contact.html" class="get-started">Start Now</a>
   </div>
 
 
@@ -52,8 +108,8 @@
   <!-- navbar end -->
 
   <section class="hero">
-    <video autoplay muted loop playsinline class="background-video">
-      <source src="./image/video/148596-794221551.mp4" type="video/mp4">
+    <video autoplay muted loop playsinline class="background-video" poster="image/video/thumbnail.png">
+      <source src="image/video/148596-794221551.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <div class="hero-overlay"></div>
@@ -64,12 +120,11 @@
           At Grand Ledgers, we revolutionize bookkeeping with our state-of-the-art Virtual Bookkeeping Services. Step
           into the future of financial management and discover the benefits below</p>
         <span class="get-started">
-          <a href="./contact.html" style="color: white; ">Start Now</a>
+          <a href="contact.html" class="btn-white">Start Now</a>
         </span>
       </div>
     </div>
   </section>
-
 
 
   <!-- hero section end -->
@@ -160,7 +215,7 @@
     <div class="testimonial-slider">
       <div class="slide active">
         <div class="card">
-          <img src="./image/5397869.jpg" alt="Ali Khan">
+          <img src="image/5397869.jpg" alt="Client testimonial by Ali Khan" loading="lazy">
           <div class="stars">★★★★★</div>
           <h3>Ali Khan</h3>
           <p>"GrandLedgers has truly transformed our bookkeeping process – efficient, dependable, and customized to our
@@ -170,7 +225,7 @@
 
       <div class="slide">
         <div class="card">
-          <img src="./image/5397869.jpg" alt="Henry Joh">
+          <img src="image/5397869.jpg" alt="Client testimonial by Henry Joh" loading="lazy">
           <div class="stars">★★★★★</div>
           <h3>Henry Joh</h3>
           <p>"As a solo entrepreneur, I was looking for both reliability and adaptability. GrandLedgers delivered beyond
@@ -180,7 +235,7 @@
 
       <div class="slide">
         <div class="card">
-          <img src="./image/5397869.jpg" alt="Priyanka Ajay">
+          <img src="image/5397869.jpg" alt="Client testimonial by Priyanka Ajay" loading="lazy">
           <div class="stars">★★★★★</div>
           <h3>Priyanka Ajay</h3>
           <p>"Partnering with GrandLedgers has elevated our business. Their attention to detail is unmatched."</p>
@@ -189,7 +244,7 @@
 
       <div class="slide">
         <div class="card">
-          <img src="./image/5397869.jpg" alt="John K.">
+          <img src="image/5397869.jpg" alt="Client testimonial by John K." loading="lazy">
           <div class="stars">★★★★★</div>
           <h3>John K.</h3>
           <p>"I’m incredibly grateful to GrandLedgers for their tailored solutions that made a real difference."</p>
@@ -218,7 +273,7 @@
         <!-- Logo & Contact -->
         <div class="footer-column">
           <div class="footer-logo">
-            <img src="./image/logo.png" alt="Logo">
+            <img src="image/logo.png" alt="Logo" loading="lazy">
             <h2 style="color: white;"></h2>
           </div>
           <div class="footer-description">
@@ -226,9 +281,9 @@
           </div>
 
           <div class="social-icons">
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
 
           <div class="footer-title">Contact Info</div>
@@ -244,9 +299,9 @@
         <div class="footer-column">
           <div class="footer-title">Services</div>
           <div class="footer-links">
-            <a href="./sevices.html">Virtual Bookkeeping</a>
-            <a href="./sevices.html">Catchup Bookkeeping</a>
-            <a href="./sevices.html">Online Payroll</a>
+            <a href="services.html">Virtual Bookkeeping</a>
+            <a href="services.html">Catchup Bookkeeping</a>
+            <a href="services.html">Online Payroll</a>
           </div>
         </div>
 
@@ -254,17 +309,17 @@
         <div class="footer-column">
           <div class="footer-title">Information</div>
           <div class="footer-links">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./work.html">How It Works</a>
-            <a href="./contact.html">Contact Us</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="work.html">How It Works</a>
+            <a href="contact.html">Contact Us</a>
           </div>
         </div>
 
         <!-- CTA -->
         <div class="footer-column">
           <div class="footer-title">Start Your Success</div>
-          <a href="./contact.html" class="cta-button">
+          <a href="contact.html" class="cta-button">
             Start Now
           </a>
         </div>
@@ -303,8 +358,7 @@
   </script>
 
 
-
+  <script src="app.js"></script>
 </body>
-<script src="app.js"></script>
 
 </html>
