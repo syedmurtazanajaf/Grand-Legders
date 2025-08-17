@@ -2,19 +2,67 @@
 <html lang="en">
 
 <head>
+  <!-- Basic Meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>About Us - Grand Ledgers | Online Bookkeeping & Accounting</title>
+  <meta name="description"
+    content="Learn more about Grand Ledgers – your trusted partner in virtual bookkeeping and online accounting services for small and medium-sized businesses.">
+  <meta name="keywords"
+    content="about Grand Ledgers, bookkeeping experts, accounting team, virtual bookkeeping, online accountants">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+
+
+  <!-- Open Graph (Facebook & LinkedIn) -->
+  <meta property="og:title" content="About Us - Grand Ledgers">
+  <meta property="og:description"
+    content="Meet the Grand Ledgers team providing reliable online bookkeeping and accounting services for small and medium-sized businesses.">
+  <meta property="og:image" content="https://grandledgers.com/image/og-image.png">
+  <meta property="og:url" content="https://grandledgers.com/about.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Us - Grand Ledgers">
+  <meta name="twitter:description" content="Trusted online bookkeeping and accounting solutions for your business.">
+  <meta name="twitter:image" content="https://grandledgers.com/image/og-image.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
 
+
+  <!-- FontAwesome (latest stable) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema Markup (SEO Boost) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Grand Ledgers",
+    "url": "https://grandledgers.com/",
+    "logo": "https://grandledgers.com/image/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/GrandLedgers",
+      "https://www.linkedin.com/company/GrandLedgers"
+    ]
+  }
+  </script>
 </head>
+
 
 <body>
   <nav>
     <div class="logo">
-      <a href="index.html"> <img src="image/logo.png" alt=""></a>
+      <a href="index.html"> <img src="image/logo.png" alt="GrandLedgers Company Logo" loading="lazy"></a>
     </div>
 
     <div class="nav-links" id="nav-links">
@@ -23,7 +71,7 @@
       <a href="about.html">About</a>
       <a href="work.html">How It Works</a>
       <span class="get-started">
-      <a href="contact.html"  style="color: white; " >Start Now</a>
+        <a href="contact.html" style="color: white; ">Start Now</a>
       </span>
     </div>
 
@@ -45,7 +93,7 @@
 
   <section class="why-section">
     <div class="why-container">
-      <img src="image/20943892.jpg" alt="Target and team" class="why-image">
+      <img src="image/about-banner.jpg" alt="Target and team" class="why-image" loading="lazy">
       <div class="why-content">
         <h2 class="why-heading">Why We are Here</h2>
         <p>Grand Ledgers epitomizes the perfect union of precision and reliability. "Grand" represents our steadfast
@@ -103,7 +151,7 @@
   <!-- container end -->
   <section class="commitment-section">
     <div class="commitment-header">
-      <h1>Our Commitment</h1>
+      <h2>Our Commitment</h2>
     </div>
 
     <div class="commitment-cards">
@@ -152,14 +200,14 @@
 
 
 
-   <footer>
+  <footer>
     <div class="footer-container">
       <div class="footer-top">
 
         <!-- Logo & Contact -->
         <div class="footer-column">
           <div class="footer-logo">
-            <img src="image/logo.png" alt="Logo">
+            <img src="image/logo.png" alt="GrandLedgers Company Logo" loading="lazy">
             <h2 style="color: white;"></h2>
           </div>
           <div class="footer-description">
@@ -167,11 +215,10 @@
           </div>
 
           <div class="social-icons">
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
-
           <div class="footer-title">Contact Info</div>
           <div class="contact-info">
             <div><span>📧</span> <a href="mailto:info@grandledgers.com"
@@ -218,32 +265,32 @@
     </div>
   </footer>
 
-  
+
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const fadeElements = document.querySelectorAll(".fade-in");
+    document.addEventListener("DOMContentLoaded", function () {
+      const fadeElements = document.querySelectorAll(".fade-in");
 
-    function checkFadeIn() {
-      const triggerBottom = window.innerHeight * 0.85; // 85% viewport
+      function checkFadeIn() {
+        const triggerBottom = window.innerHeight * 0.85; // 85% viewport
 
-      fadeElements.forEach(el => {
-        const elementTop = el.getBoundingClientRect().top;
+        fadeElements.forEach(el => {
+          const elementTop = el.getBoundingClientRect().top;
 
-        if (elementTop < triggerBottom) {
-          el.classList.add("show");
-        } else {
-          el.classList.remove("show");
-        }
-      });
-    }
+          if (elementTop < triggerBottom) {
+            el.classList.add("show");
+          } else {
+            el.classList.remove("show");
+          }
+        });
+      }
 
-    window.addEventListener("scroll", checkFadeIn);
-    checkFadeIn(); // page load par bhi check ho
-  });
-</script>
+      window.addEventListener("scroll", checkFadeIn);
+      checkFadeIn(); // page load par bhi check ho
+    });
+  </script>
 
+  <script src="app.js"></script>
 
 </body>
-<script src="app.js"></script>
 
 </html>

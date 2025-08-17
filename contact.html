@@ -4,20 +4,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+
+  <!-- Title (SEO Friendly) -->
+  <title>Contact GrandLedgers | Professional Bookkeeping Services</title>
+
+  <!-- Meta Description (Google Search Result ke liye) -->
+  <meta name="description" content="Get in touch with GrandLedgers for bookkeeping, payroll, and year-end financial services. Contact us today for secure and reliable accounting support.">
+
+  <!-- Favicon -->
+ <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts (with font-display=swap for speed) -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Open Graph (Social Media Preview) -->
+  <meta property="og:title" content="Contact GrandLedgers | Professional Bookkeeping Services">
+  <meta property="og:description" content="Get in touch with GrandLedgers for bookkeeping, payroll, and year-end financial services.">
+  <meta property="og:image" content="https://grandledgers.com/image/logo.png">
+  <meta property="og:url" content="https://grandledgers.com/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
+
 </head>
+
 
 <body>
 
   <nav>
     <div class="logo">
-      <a href="index.html"> <img src="image/logo.png" alt=""></a>
+      <a href="index.html"> <img src="image/logo.png" alt="GrandLedgers Company Logo" loading="lazy"></a>
     </div>
 
     <div class="nav-links" id="nav-links">
@@ -56,13 +80,13 @@
         <div class="header-icon">
           <i class="fas fa-calculator"></i>
         </div>
-        <h2>Contact Grand Ledgers</h2>
+        <h1>Contact Grand Ledgers</h1>
         <p class="subtitle">Professional bookkeeping services for your business growth</p>
       </div>
 
       <form action="https://formsubmit.co/info@grandledgers.com" method="POST" id="contactForm">
         <!-- Redirect after submit -->
-        <input type="hidden" name="_next" value="https://grand-legders.vercel.app/thank.html">
+        <input type="hidden" name="_next" value="https://grandledgers.com/thank.html">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
 
@@ -95,7 +119,7 @@
             <label for="company">Company Name</label>
             <div class="input-wrapper">
               <i class="fas fa-building input-icon"></i>
-              <input type="text" id="company" name="company" placeholder="Enter company name" required>
+              <input type="text" id="company" name="company" placeholder="Enter company name">
             </div>
           </div>
         </div>
@@ -168,14 +192,14 @@
     </div>
   </div>
 
-    <footer>
+   <footer>
     <div class="footer-container">
       <div class="footer-top">
 
         <!-- Logo & Contact -->
         <div class="footer-column">
           <div class="footer-logo">
-            <img src="image/logo.png" alt="Logo">
+            <img src="image/logo.png" alt="GrandLedgers Company Logo" loading="lazy">
             <h2 style="color: white;"></h2>
           </div>
           <div class="footer-description">
@@ -183,9 +207,9 @@
           </div>
 
           <div class="social-icons">
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
 
           <div class="footer-title">Contact Info</div>
@@ -273,9 +297,9 @@
   });
 </script>
 
+<script src="app.js"></script>
 
 </body>
-<script src="app.js"></script>
 
 
 </html>

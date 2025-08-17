@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  color: #1e293b;
+  font-family:Arial, Helvetica, sans-serif;
+  color: black;
 
 }
 
@@ -90,9 +90,6 @@ nav {
   box-shadow: 0 2px 8px rgba(30, 118, 233, 0.3);
 }
 
-.btn-white {
-  color: white;
-}
 
 .hamburger {
   display: none;
@@ -219,19 +216,6 @@ nav {
 }
 
 @media (max-width: 767px) {
-
-  .background-video {
-    display: none;
-  }
- 
-  .hero {
-        background: url("image/video/thumbnail.png") center/cover no-repeat;
-
-    padding: 2rem 1rem;
-    min-height: auto;
-  }
-
-
   .hero-content h1 {
     font-size: 1.6rem;
     line-height: 1.4;
@@ -522,6 +506,11 @@ footer {
   gap: 20px;
   max-width: 1200px;
   margin: auto;
+}
+
+.footer-container a:hover{
+  color: #81f31d;
+
 }
 
 .footer-top {
@@ -919,7 +908,7 @@ footer {
   margin-bottom: 50px;
 }
 
-.commitment-header h1 {
+.commitment-header h2 {
   font-size: 2.5rem;
   color: #0ea5e9;
   border-bottom: 3px solid #0ea5e9;
@@ -970,7 +959,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .commitment-header h1 {
+  .commitment-header h2 {
     font-size: 1.9rem;
   }
 }
@@ -1015,7 +1004,7 @@ footer {
   text-align: left;
 }
 
-.text-description h2 {
+.text-description h1 {
   color: #0ea5e9;
 }
 
@@ -1380,13 +1369,13 @@ footer {
   min-width: 300px;
 }
 
-.text-content h1 {
+.text-content h2 {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.text-content h1 span {
+.text-content h2 span {
   color: #0ea5e9;
 }
 
@@ -1418,7 +1407,7 @@ footer {
     text-align: center;
   }
 
-  .text-content h1 {
+  .text-content h2 {
     font-size: 1.75rem;
   }
 
@@ -1428,7 +1417,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .text-content h1 {
+  .text-content h2 {
     font-size: 1.5rem;
   }
 
@@ -1500,7 +1489,7 @@ footer {
   border: 3px solid rgba(214, 158, 46, 0.2);
 }
 
-h2 {
+.header-section h1 {
   color: #0ea5e9;
   font-size: 2.4rem;
   font-weight: 700;
@@ -1781,8 +1770,8 @@ textarea {
     gap: 12px;
   }
 
-  h2 {
-    font-size: 2rem;
+  .header-section h1 {
+    font-size: 1.9rem;
   }
 
   .header-icon {
@@ -1808,7 +1797,7 @@ textarea {
     border-radius: 12px;
   }
 
-  h2 {
+  .header-section h1 {
     font-size: 1.8rem;
   }
 
